@@ -1,0 +1,53 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+env/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ---- MicroPython ----
+# Cross-compiled bytecode that shouldn't live next to source
+*.mpy
+# MicroPico caches and ephemeral state
+.picowgo
+.micropico
+
+# ---- VS Code ----
+# We commit shared settings in .vscode/ (extensions.json, settings.json).
+# Personal / machine-specific files are ignored:
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ---- Linux ----
+*~
+.fuse_hidden*
+.Trash-*
+
+# ---- Windows ----
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- Secrets & local config ----
+# Nothing sensitive should ever be committed. If you need a local config
+# (WiFi creds for testing, etc.), put it in secrets.py and keep it out:
+secrets.py
+.env
+.env.local

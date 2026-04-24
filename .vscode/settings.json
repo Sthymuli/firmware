@@ -1,0 +1,23 @@
+{
+  "editor.formatOnSave": true,
+  "editor.rulers": [100],
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+
+  "micropico.syncFolder": "",
+  "micropico.openOnStart": false
+}

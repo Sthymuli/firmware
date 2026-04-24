@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "paulober.pico-w-go",
+    "charliermarsh.ruff",
+    "redhat.vscode-yaml",
+    "tamasfe.even-better-toml"
+  ]
+}

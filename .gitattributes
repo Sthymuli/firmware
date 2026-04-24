@@ -1,0 +1,24 @@
+# Normalize line endings. Every text file is stored as LF in Git; checkouts
+# on Windows get CRLF automatically via core.autocrlf. This prevents the
+# classic "every line changed" diff when a collaborator on Windows pushes.
+* text=auto eol=lf
+
+# Explicitly mark source files as text
+*.py    text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.toml  text eol=lf
+*.json  text eol=lf
+*.cfg   text eol=lf
+*.ini   text eol=lf
+Makefile text eol=lf
+
+# Binary assets (don't try to diff or normalize these)
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.ico   binary
+*.bin   binary
+*.mpy   binary
+*.pdf   binary
